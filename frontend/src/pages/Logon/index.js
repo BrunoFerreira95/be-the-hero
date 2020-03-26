@@ -1,14 +1,8 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiLogIn } from 'react-icons/fi';
 
 import api from '../../services/api';
-=======
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { FiLogIn } from 'react-icons/fi';
->>>>>>> 855a75727a6e42e5335c732765a33b0e11165862
 
 import './styles.css';
 
@@ -40,7 +34,6 @@ export default function Logon() {
             <section className="form">
                 <img src={logoImg} alt="Be The Hero"/>
 
-<<<<<<< HEAD
                 <form onSubmit={handleLogin}>
                     <h1>Faça seu Logon</h1>
 
@@ -49,12 +42,6 @@ export default function Logon() {
                     value={id}
                     onChange={e => setId(e.target.value)}
                     />
-=======
-                <form>
-                    <h1>Faça seu Logon</h1>
-
-                    <input placeholder="Sua ID"/>
->>>>>>> 855a75727a6e42e5335c732765a33b0e11165862
                     <button className="button" type="submit">Entrar</button>
 
                     <Link className="back-link" to="/register">
