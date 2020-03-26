@@ -1,14 +1,22 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 
 import api from '../../services/api';
 
+=======
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FiArrowLeft } from 'react-icons/fi';
+
+>>>>>>> 855a75727a6e42e5335c732765a33b0e11165862
 import './styles.css';
 
 import logoImg from '../../assets/logo.svg';
 
 export default function Register() {
+<<<<<<< HEAD
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [whatsapp, setWhatsapp] = useState('');
@@ -40,6 +48,8 @@ export default function Register() {
         }
     }
 
+=======
+>>>>>>> 855a75727a6e42e5335c732765a33b0e11165862
     return (
         <div className="register-container">
             <div className="content">
@@ -55,6 +65,7 @@ export default function Register() {
                     </Link>
                 </section>
 
+<<<<<<< HEAD
                 <form onSubmit={handleRegister}>
 
                     <input 
@@ -90,6 +101,16 @@ export default function Register() {
                         value={uf}
                         onChange={e => setUf(e.target.value)}
                         />
+=======
+                <form>
+                    <input placeholder="Nome da ONG"/>
+                    <input type="email" placeholder="E-mail"/>
+                    <input placeholder="WhatsApp"/>
+                    
+                    <div className="input-group">
+                        <input placeholder="Cidade"/>
+                        <input placeholder="UF" style={{ width: 80 }}/>
+>>>>>>> 855a75727a6e42e5335c732765a33b0e11165862
                     </div>
 
                     <button className="button" type="submit">Cadastrar</button>
